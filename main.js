@@ -4,7 +4,13 @@
 //     return
 // }
 
-const CelsiusT = +prompt(`Темп градусов в Цельсия`);
-const FarenheitT = (9 / 5) * CelsiusT + 32;
-alert("В цельсий: " + CelsiusT + ", В фаренгейт: " + FarenheitT);
+// const CelsiusT = +prompt(`Темп градусов в Цельсия`);
+// const FarenheitT = (9 / 5) * CelsiusT + 32;
+// alert("В цельсий: " + CelsiusT + ", В фаренгейт: " + FarenheitT);
 
+const username = +prompt(`Введите имя`);
+function greeting() {
+    console.log("Welcome, " + username + "!");
+    greeting(username);
+}
+// alert("Welcome, " + username + "!");
